@@ -8,12 +8,49 @@ body {
   background-size: 100% cover !important;
   overflow: hidden;
   display: block;
+  height: 100%;
 }
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
+#main-container-div {
+  height: 100vh;
+}
 .postButtons {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   height: 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.firstBtn {
+  background-color: orange;
+  color: black;
+  margin-right: 1%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-right-color: grey;
+  border-bottom-color: gray;
+  margin-bottom: 400px;
+}
+.secondBtn {
+  background-color: orange;
+  color: black;
+  margin-right: 1%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-right-color: grey;
+  border-bottom-color: gray;
+  margin-bottom: 400px;
 }
