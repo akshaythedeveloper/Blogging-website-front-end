@@ -1,2 +1,59 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+
+.logo {
+  font-family: "Satisfy", cursive;
+  color: blue;
+  padding-left: 10px;
+  font-size: 50px;
+  margin-top: 0px;
+}
+.explore {
+  font-family: "Satisfy", cursive;
+  font-weight: normal;
+  margin-top: 0%;
+  padding-left: 10px;
+}
+.left {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.right {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 10px;
+}
+.SigninBtn {
+  background-color: blue;
+  color: white;
+  border: 0ch;
+  float: right;
+  margin-right: 1%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.SignupBtn {
+  background-color: blue;
+  color: white;
+  border: 0ch;
+  float: right;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
