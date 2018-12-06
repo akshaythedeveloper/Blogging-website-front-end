@@ -11,42 +11,9 @@ body {
 }
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-#main-container-div {
-}
-
-.header {
-  width: 100%;
-  justify-content: flex-start;
-}
-
-.logo {
-  font-family: "Satisfy", cursive;
-  color: blue;
-  padding-left: 1%;
-  margin-bottom: 0%;
-  margin-right: 50%;
-}
-.explore {
-  font-family: "Satisfy", cursive;
-  font-weight: normal;
-  padding-left: 1%;
-  margin-top: 0%;
-}
-.left {
-  float: left;
-  margin-top: 1%;
-}
-.right {
-  float: right;
-  margin-top: 1%;
-}
-.SigninBtn {
-  background-color: blue;
-  color: white;
-  border: 0ch;
-}
-.SignupBtn {
-  background-color: blue;
-  color: white;
-  border: 0ch;
+.postButtons {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 100%;
 }
