@@ -74,18 +74,24 @@ body {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.4);
   animation-name: modalopen;
   animation-duration: 1s;
-  font-family: sans-serif;
+  font-family: "Abel", sans-serif;
 }
 .modal-header {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
   max-width: 100%;
+  margin-left: 110px;
+}
+.top-heading {
+  text-align: center;
+  display: inline;
+  font-size: 30px;
 }
 .close {
   color: #aaa;
-  float: right;
   font-size: 28px;
   font-weight: bold;
+  float: right;
 }
 .close:hover,
 .close:focus {
@@ -98,14 +104,15 @@ label {
   font-size: small;
   font-weight: bold;
   display: block;
+  margin-bottom: 5px;
 }
 input {
   background-color: lightgrey;
   width: -webkit-fill-available;
-  padding: 15px;
+  padding: 13px;
   font-size: medium;
   border-style: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .signup {
@@ -114,6 +121,7 @@ input {
   margin-top: 10px;
   width: 100%;
   padding: 15px;
+  font-weight: bold;
 }
 
 @keyframes modalopen {
