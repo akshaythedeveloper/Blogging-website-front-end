@@ -74,3 +74,8 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
   font-weight: bold;
   float: right;
 }
+#signUpNavigation {
+  color: rgba(46, 46, 226, 0.877);
+  font-weight: bold;
+  cursor: pointer;
+}

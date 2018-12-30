@@ -1,4 +1,4 @@
-//Code for Signup modal
+/* Code for Signup modal */
 
 // Get the modal
 var modal = document.getElementById("myModal");
@@ -17,13 +17,6 @@ btn.onclick = function() {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
 };
 
 /* Code for Signin modal */
@@ -47,9 +40,11 @@ span.onclick = function() {
   modaltwo.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modaltwo) {
-    modaltwo.style.display = "none";
-  }
+/* code for Signup hyperlink */
+
+var signupHyperlink = document.getElementById("signUpNavigation");
+
+signupHyperlink.onclick = function() {
+  modaltwo.style.display = "none";
+  modal.style.display = "block";
 };

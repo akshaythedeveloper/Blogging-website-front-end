@@ -19,9 +19,10 @@ span.onclick = function() {
   createPost.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == createPost) {
-    createPost.style.display = "none";
-  }
+// Get the All post button that opens the bloglist.html file
+var allPostBtn = document.getElementById("myAllPostsBtn");
+
+// When the user clicks on "All posts" button , opens the bloglist.html file
+allPostBtn.onclick = function() {
+  window.open("../html/bloglist.html", "_self");
 };

@@ -210,6 +210,10 @@ textarea {
 .modal-footer {
   text-align: center;
 }
+#titleInput {
+  width: 50%;
+  margin-bottom: 40px;
+}
 
 @keyframes modalopen {
   from {

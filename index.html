@@ -61,9 +61,9 @@
             <label>Confirm password</label>
             <input type="password" placeholder="Confirm password" required />
             <br />
+            <button class="signin">Sign Up</button>
           </form>
         </div>
-        <div class="modal-footer"><button class="signup">Sign Up</button></div>
       </div>
     </div>
 
@@ -86,7 +86,7 @@
         </div>
         <div class="modal-footer">
           <h4 style="display:inline">Not a member?</h4>
-          <span><a class="signUpNavigation">Sign Up</a></span>
+          <span><a id="signUpNavigation">Sign Up</a></span>
         </div>
       </div>
     </div>
@@ -99,8 +99,10 @@
           <span class="close">&times</span>
         </div>
         <hr />
+
         <div class="modal-body"></div>
-        <label>Title:</label> <input type="text" /> <label>Content:</label>
+        <label>Title:</label> <input type="text" id="titleInput" />
+        <label>Content:</label>
         <textarea rows="12" cols="50" name="comment" form="usrform"></textarea>
         <br />
         <button class="myCreateBtn">Create</button>
