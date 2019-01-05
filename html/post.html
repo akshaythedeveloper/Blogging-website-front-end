@@ -11,6 +11,7 @@
     <style>        
     </style>     
 </head>
+
 <body onload="displayCommentSection()">
     <div id="main-container-div">
         <div class="header">
@@ -55,45 +56,34 @@
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
 
-<!--<div class="likeComment">-->
+
     <div class="likeBtn">
         <button class="btn-button" id="likeBtn" onclick="changeLikeBtnTxt(id)">Like</button>
-        <br>    
-        <!--<br>-->    
+        <br>             
     </div>
 
     <div class="likeText">
-        <!--<br>-->  
         <br> <p id="likeTxt">Be the first one to like this!</p>
     </div>
 
     <div class="inputComment">
         <textArea id="commentText" placeholder="Leave a comment..."></textArea>
-        <br>  
-        <!--<br>-->  
+        <br>    
     </div>
 
     <div class="commentBtn">
-        <!--<br>-->
-        <br> <button class="btn-button" id="cmtBtn" onclick="addComment()">Comment</button> <br> 
-        <!--<br>-->  
+        <br> <button class="btn-button" id="cmtBtn" onclick="addComment()">Comment</button> <br>   
     </div>
 
     <div class="commentHeader">
-            <!--<br>-->  
-            <br> <h2>All Comments</h2>  
-            <!--<br>-->  
+        <br> <h2>All Comments</h2>   
     </div>
+
     <div id="displaycomments" style=" border: 15px solid grey; background-color:grey; width:75%">
-
-    <section>
-           <!-- <div class="comments-div" id="listOfComments"></div> -->
+        <section>
            <p id="listOfComments"></p>
-    </section>
-    
-     </div>  
-
-<!--</div> -->
+         </section>    
+     </div> 
 
     <script src="..\js\post.js" defer></script>
     <script src="..\js\header.js">             

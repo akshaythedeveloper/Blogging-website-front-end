@@ -15,6 +15,7 @@
     font-size: 30px;
     text-align: left;    
 }
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
 
 .toggleButton{
     width: 75px;
@@ -60,25 +61,8 @@ textArea{
     text-align: left;    
 }
 
-.comments{
-    width: 50%;
-    height: 50px;
-    border: 20%;
-    border-color: grey;
-    text-align: left;    
-}
 
-.comments-div{
-    padding: 10px 15px;
-    border: 40px solid grey;
-}
 
-.comments-p{   
-    border: 2px solid grey;
-}
 
-.blogContent{
-    /*text-align: center;*/
-}
 
-/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
