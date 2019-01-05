@@ -4,9 +4,10 @@
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
+    margin: 20px 50px 30px 20px;
     float:left;
     border-radius: 15px;
+	padding:0px !important;
 }
     
 .post-left {
@@ -54,11 +55,43 @@ body {
     position: relative;
     margin: 0 !important;
     color: #fff;
-    background-color: orange;
+    background-color: orange !important;
     background-size: 2000% 2000%;
 }
 .allPostsContainer {
     height: 100%;
     width: 100%;
 
+}
+
+.modal-footer-blog {
+	padding: 5px 20px 15px 20px;
+  
+}
+.modal-header-blog{
+	padding: 15px 0px 0px 0px;
+	text-align : center;
+    
+}
+
+.btn-primary-blog{
+	color: #fff;
+    background-color: red;
+    border-color: red;
+}
+
+.btn-secondary-blog{
+	color: #fff;
+    background-color: green;
+    border-color: green;
+}
+
+.image-delete{
+	margin: 15px -5px 10px 10px;
+}
+
+
+.ellipsis-blog{
+	text-overflow : ellipsis;
+	overflow:hidden;
 }
