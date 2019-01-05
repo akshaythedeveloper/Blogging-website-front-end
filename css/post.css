@@ -2,18 +2,67 @@
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 .blogText {
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     text-align: justify;
 
 }
 .blogAuthor {
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+    text-align: left;    
 }
-.blogContent{
-
-}
-
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
+.toggleButton{
+    width: 75px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    float: right;
+    /*margin: 5px;*/
+    padding: 5px;
+    border: 0;   
+    cursor: pointer; 
+}
+
+.btn-button{
+    width: 100px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    float: left;
+    padding: 5px;
+    border: 0;
+    margin: 1px;
+    cursor: pointer;    
+}
+
+.likeText{
+    align-self: flex-start;
+    text-align: left;
+    font-size: small;          
+}
+
+input{
+   width: 50%;
+   height: 50px;
+}
+
+textArea{
+    width: 50%;
+    height: 50px;
+    border: 20%;
+    border-color: grey;
+    background-color: white;
+    text-align: left;    
+}
+
+
+
+
+
+
