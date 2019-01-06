@@ -2,18 +2,278 @@
     font-size: 150%;
     font-family: 'Abel', sans-serif;
     font-weight: bold;
+    text-align: center;
 }
 .blogText {
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     text-align: justify;
 
 }
 .blogAuthor {
     padding: 0px 0px 0px 10px;
     font-family: 'Niconne', cursive;
     font-size: 30px;
+    text-align: left;    
 }
-.blogContent{
-
-}
-
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
+.toggleButton{
+    width: 75px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    float: right;
+    /*margin: 5px;*/
+    padding: 5px;
+    border: 0;   
+    cursor: pointer; 
+}
+
+.btn-button{
+    width: 100px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    float: left;
+    padding: 5px;
+    border: 0;
+    margin: 1px;
+    cursor: pointer;    
+}
+
+.likeText{
+    align-self: flex-start;
+    text-align: left;
+    font-size: small;          
+}
+
+input{
+   width: 50%;
+   height: 50px;
+}
+
+textArea{
+    width: 50%;
+    height: 50px;
+    border: 20%;
+    border-color: grey;
+    background-color: white;
+    text-align: left;    
+}
+
+
+.postButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.firstBtn {
+  background-color: #ffc060;
+  color: black;
+  margin-right: 1%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: #f1f1f1;
+  border-left-color: #f1f1f1;
+  border-right-color: grey;
+  border-bottom-color: grey;
+  margin-bottom: 400px;
+}
+.secondBtn {
+  background-color: #ffc060;
+  color: black;
+  margin-right: 1%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: #f1f1f1;
+  border-left-color: #f1f1f1;
+  border-right-color: grey;
+  border-bottom-color: grey;
+  margin-bottom: 400px;
+}
+.signupModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sits on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrool if needed */
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.signinModal {
+  display: none;/* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sits on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrool if needed */
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.createPostModal {
+  display: none;/* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sits on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scrool if needed */
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.create-modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* 15% from top and centered */
+  padding: 20px;
+  width: 700px;
+  height: 500px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.4);
+  animation-name: modalopen;
+  animation-duration: 1s;
+  font-family: "Abel", sans-serif;
+}
+
+.create-modal-header {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; /* 15% from top and centered */
+  padding: 20px;
+  width: 350px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.4);
+  animation-name: modalopen;
+  animation-duration: 1s;
+  font-family: "Abel", sans-serif;
+  display: block;
+}
+.modal-header {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-left: 110px;
+}
+.top-heading {
+  text-align: center;
+  display: inline;
+  font-size: 30px;
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+label {
+  text-align: left;
+  font-size: medium;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+textarea {
+  background-color: #e4dcdc;
+  opacity: 0.5;
+  width: -webkit-fill-available;
+  padding: 13px;
+  font-size: small;
+  border-style: hidden;
+  margin-bottom: 20px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.signup {
+  background-color: #4caf50;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+
+.signin {
+  background-color: #4caf50;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
+}
+.myCreateBtn {
+  background-color: #4caf50;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  display: block;
+  font-weight: medium;
+}
+.modal-footer {
+  text-align: center;
+}
+#titleInput {
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+

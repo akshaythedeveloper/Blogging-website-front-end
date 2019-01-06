@@ -1,2 +1,81 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+
+.header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+
+.logo {
+  font-family: "Satisfy", cursive;
+  color: blue;
+  padding-left: 10px;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.explore {
+  font-family: "Satisfy", cursive;
+  font-weight: normal;
+  margin-top: 0%;
+  padding-left: 10px;
+}
+.left {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.right {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 10px;
+}
+.SigninBtn {
+  background-color: blue;
+  color: white;
+  float: right;
+  margin-right: 1%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: #f1f1f1;
+  border-left-color: #f1f1f1;
+  border-right-color: grey;
+  border-bottom-color: grey;
+}
+.SignupBtn {
+  background-color: blue;
+  color: white;
+  float: right;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: #f1f1f1;
+  border-left-color: #f1f1f1;
+  border-right-color: grey;
+  border-bottom-color: grey;
+}
+.close {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+}
+#signUpNavigation {
+  color: rgba(46, 46, 226, 0.877);
+  font-weight: bold;
+  cursor: pointer;
+}
