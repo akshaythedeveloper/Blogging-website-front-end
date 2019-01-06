@@ -1,55 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-
+  <head>
+    <title>Scribbler</title>
     <!-- Place all CSS for header in this file -->
-    <link href='css\header.css' rel='stylesheet' type='text/css'>
+    <link href="css\header.css" rel="stylesheet" type="text/css" />
 
     <!-- Place all CSS for the rest of the elements in this file -->
-    <link href='css\index.css' rel='stylesheet' type='text/css'>
+    <link href="css\index.css" rel="stylesheet" type="text/css" />
 
-	<!-- Place all CSS for fonts in this file -->
-    <link href='css\font.css' rel='stylesheet' type='text/css'>
-
-</head>
-<body>
+    <!-- Place all CSS for fonts in this file -->
+    <link href="css\font.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div id="main-container-div">
-
-        <div class="header">
-
-        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-
+      <div class="header">
+        <!--
+          Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading
+        -->
+        <div class="left">
+          <h1 class="logo">Scribbler</h1>
+          <h5 class="explore">Explore, Imagine, Create</h5>
         </div>
-           
-        <div class="postButtons">
-
-        	<!-- Insert code for All Posts & Create Post button here -->
-
+        <div class="right">
+          <button id="mySigninBtn" class="SigninBtn">Signin</button>
+          <button id="mySignupBtn" class="SignupBtn">Signup</button>
         </div>
+      </div>
+
+      <div class="postButtons">
+        <!-- Insert code for All Posts & Create Post button here -->
+        <button id="myAllPostsBtn" class="firstBtn">All Posts</button>
+        <button id="myCreatePostBtn" class="secondBtn">Create Post</button>
+      </div>
     </div>
 
-    <div>
-
-    	<!-- Insert code for Sign In modal here -->
-
+    <div id="myModal" class="signupModal">
+      <!-- Insert code for Sign Up modal here -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="top-heading">Get Started</h3>
+          <span class="close">&times</span>
+        </div>
+        <hr />
+        <div class="modal-body">
+          <form id="form">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter Full Name" required />
+            <label>Username</label>
+            <input type="text" placeholder="Enter Username" required />
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password" required />
+            <label>Confirm password</label>
+            <input type="password" placeholder="Confirm password" required />
+            <br />
+            <button class="signin">Sign Up</button>
+          </form>
+        </div>
+      </div>
     </div>
 
-    <div>
-
-    	<!-- Insert code for Sign Up modal here -->
-
+    <div id="myModalSecond" class="signinModal">
+      <!-- Insert code for Sign In modal here -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="top-heading">Welcome Back!</h3>
+          <span class="close">&times</span>
+        </div>
+        <hr />
+        <div class="modal-body">
+          <form id="form">
+            <label>Username</label>
+            <input type="text" placeholder="Username" required />
+            <label>Password</label>
+            <input type="password" placeholder="Password" required /><br />
+            <button class="signin">Sign In</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <h4 style="display:inline">Not a member?</h4>
+          <span><a id="signUpNavigation">Sign Up</a></span>
+        </div>
+      </div>
     </div>
 
-    <div>
+    <div id="myCreatePostModal" class="createPostModal">
+      <!-- Insert code for Create Post modal here -->
+      <div class="create-modal-content">
+        <div class="create-modal-header">
+          <h3 class="top-heading">Pen Your Post</h3>
+          <span class="close">&times</span>
+        </div>
+        <hr />
 
-    	<!-- Insert code for Create Post modal here -->
-
+        <div class="modal-body"></div>
+        <label>Title:</label> <input type="text" id="titleInput" />
+        <label>Content:</label>
+        <textarea rows="12" cols="50" name="comment" form="usrform"></textarea>
+        <br />
+        <button class="myCreateBtn">Create</button>
+      </div>
     </div>
 
-	<!-- Place all Javascript for header in this file -->
-	<script src="js\header.js"></script>
-	<!-- Place all Javascript for rest of the elements in this file -->
+    <!-- Place all Javascript for header in this file -->
+    <script src="js\header.js"></script>
+    <!-- Place all Javascript for rest of the elements in this file -->
     <script src="js\index.js"></script>
-
-</body>
+  </body>
 </html>
